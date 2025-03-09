@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'Details - ' + ${boardGame.name}">Game Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .badge-wrapper {
+            display: inline-flex;
+            align-items: center;
+            margin: 0.2rem;
+            font-size: 0.9rem;
+        }
+
+        .badge-item {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .badge-item .btn-sm {
+            padding: 0.2rem 0.3rem;
+            margin-left: 0.3rem;
+        }
+
+        .badge-category {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .badge-mechanic {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .badge-artist {
+            background-color: #17a2b8;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .badge-alt-name {
+            background-color: #343a40;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .badge-add {
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+        }
+
+        .badge-add:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Boardit</a>
+        <a class="navbar-brand" href="/admin">Admin Panel</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2 th:text="'Details of: ' + ${boardGame.name}"></h2>
+    <div class="mt-4">
+        <div class="alert alert-danger" th:if="${error != null}" th:text="${error}"></div>
+        <div class="alert alert-success" th:if="${success != null}" th:text="${success}"></div>
+    </div>
+    <div class="mt-4">
+        <a href="/admin/boardgames" class="btn btn-secondary">Back to List</a>
+        <a th:href="@{/admin/boardgames/edit/{id}(id=${boardGame.id})}" class="btn btn-primary">Edit</a>
+        <a th:href="@{/admin/boardgames/delete/{id}(id=${boardGame.id})}" class="btn btn-danger">Delete</a>
+    </div>
+    <div class="card mt-3">
+
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img th:src="${boardGame.imageLink}" class="img-fluid rounded-start" alt="Board Game Image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${boardGame.name}"></h5>
+                    <p class="card-text"><strong>Description:</strong> <span th:text="${boardGame.description}"></span>
+                    </p>
+                    <p class="card-text"><strong>Year Published:</strong> <span
+                            th:text="${boardGame.yearPublished}"></span></p>
+                    <p class="card-text"><strong>Players:</strong> <span
+                            th:text="${boardGame.minPlayers + ' - ' + boardGame.maxPlayers}"></span></p>
+                    <p class="card-text"><strong>Playing Time:</strong> <span
+                            th:text="${boardGame.playingTime + ' minutes'}"></span></p>
+                    <p class="card-text">
+                        <strong>Categories:</strong>
+                        <span th:each="category : ${categories}" class="badge-wrapper">
+        <span class="badge-item badge-category">
+            <span th:text="${category.name}"></span>
+            <a th:href="@{/admin/boardgames/{boardGameId}/remove-category(boardGameId=${boardGame.id}, categoryId=${category.id})}"
+               class="btn btn-sm btn-danger">x</a>
+        </span>
+    </span>
+                    <form th:action="@{/admin/boardgames/{boardGameId}/add-category(boardGameId=${boardGame.id})}" method="post" class="d-inline">
+                        <select name="categoryId" class="form-select form-select-sm d-inline w-auto">
+                            <option th:each="availableCategory : ${availableCategories}"
+                                    th:value="${availableCategory.id}"
+                                    th:text="${availableCategory.name}"></option>
+                        </select>
+                        <button type="submit" class="btn btn-sm btn-primary">Add</button>
+                    </form>
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Mechanics:</strong>
+                        <span th:each="mechanic : ${mechanics}" class="badge-wrapper">
+        <span class="badge-item badge-mechanic">
+            <span th:text="${mechanic.name}"></span>
+            <a th:href="@{/admin/boardgames/{boardGameId}/remove-mechanic(boardGameId=${boardGame.id}, mechanicId=${mechanic.id})}"
+               class="btn btn-sm btn-danger">x</a>
+        </span>
+    </span>
+                    <form th:action="@{/admin/boardgames/{boardGameId}/add-mechanic(boardGameId=${boardGame.id})}" method="post" class="d-inline">
+                        <select name="mechanicId" class="form-select form-select-sm d-inline w-auto">
+                            <option th:each="availableMechanic : ${availableMechanics}"
+                                    th:value="${availableMechanic.id}"
+                                    th:text="${availableMechanic.name}"></option>
+                        </select>
+                        <button type="submit" class="btn btn-sm btn-primary">Add</button>
+                    </form>
+                    </p>
+                    <p class="card-text">
+                        <strong>Artists:</strong>
+                        <span th:each="artist : ${artists}" class="badge-wrapper">
+    <span class="badge-item badge-artist">
+        <a th:href="@{/admin/boardgames/{boardGameId}/edit-artist/{artistId}(boardGameId=${boardGame.id}, artistId=${artist.id})}"
+           th:text="${artist.name}" class="text-decoration-none text-light"></a>
+        <a th:href="@{/admin/boardgames/{boardGameId}/delete-artist(boardGameId=${boardGame.id}, artistId=${artist.id})}"
+           class="btn btn-sm btn-danger">x</a>
+    </span>
+</span>
+                        <button class="btn btn-sm badge-add" data-bs-toggle="modal" data-bs-target="#addArtistModal">+
+                        </button>
+                    </p>
+                    <p class="card-text">
+                        <strong>Alternate Names:</strong>
+                        <span th:each="altName : ${alternateNames}" class="badge-wrapper">
+
+    <span class="badge-item badge-alt-name">
+        <a th:href="@{/admin/boardgames/{boardGameId}/edit-alternate-name/{altNameId}(boardGameId=${boardGame.id}, altNameId=${altName.id})}"
+           th:text="${altName.name}" class="text-decoration-none text-light"></a>
+        <a th:href="@{/admin/boardgames/{boardGameId}/delete-alternate-name(boardGameId=${boardGame.id}, altNameId=${altName.id})}"
+           class="btn btn-sm btn-danger">x</a>
+    </span>
+</span>
+                        <button class="btn btn-sm badge-add" data-bs-toggle="modal" data-bs-target="#addAltNameModal">
+                            +
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="modal fade" id="addArtistModal" tabindex="-1" aria-labelledby="addArtistModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form th:action="@{/admin/boardgames/{id}/add-artist(id=${boardGame.id})}" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addArtistModalLabel">Add Artist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="artistName" class="form-label">Artist Name</label>
+                        <input type="text" class="form-control" id="artistName" name="artistName" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Artist</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addAltNameModal" tabindex="-1" aria-labelledby="addAltNameModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form th:action="@{/admin/boardgames/{id}/add-alternate-name(id=${boardGame.id})}" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addAltNameModalLabel">Add Alternate Name</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="altName" class="form-label">Alternate Name</label>
+                        <input type="text" class="form-control" id="altName" name="altName" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Alternate Name</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

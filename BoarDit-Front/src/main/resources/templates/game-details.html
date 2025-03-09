@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${boardGame.name} + ' - Details'">Game Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+</head>
+<body>
+<header>
+    <div th:replace="fragments/nav-bar :: navbar"></div>
+</header>
+
+<main class="container my-5">
+    <div class="card">
+        <div class="card-header text-center bg-primary text-white">
+            <h1 th:text="${boardGame.name}">Game Name</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img th:src="${boardGame.imageLink}" alt="Game Image" class="img-fluid mb-3 rounded shadow">
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Year Published:</strong> <span th:text="${boardGame.yearPublished}">Year</span></p>
+                    <p><strong>Players:</strong> <span th:text="${boardGame.minPlayers} + ' - ' + ${boardGame.maxPlayers}">Players</span></p>
+                    <p><strong>Playing Time:</strong> <span th:text="${boardGame.playingTime}">Time</span> mins</p>
+                    <p><strong>Description:</strong></p>
+                    <p th:text="${boardGame.description}" class="text-muted">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h3>Details</h3>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <!-- Mechanics -->
+                        <div class="col-md-6" th:if="${mechanics != null and !mechanics.isEmpty()}">
+                            <h4>Mechanics</h4>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item" th:each="mechanic : ${mechanics}" th:text="${mechanic.name}">Mechanic Name</li>
+                            </ul>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="col-md-6" th:if="${categories != null and !categories.isEmpty()}">
+                            <h4>Categories</h4>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item" th:each="category : ${categories}" th:text="${category.name}">Category Name</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Expansions -->
+                        <div class="col-md-6" th:if="${expansions != null and !expansions.isEmpty()}">
+                            <h4>Expansions</h4>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item" th:each="expansion : ${expansions}">
+                                    <a th:href="@{'/expansion/' + ${expansion.id} + '/details'}" th:text="${expansion.name}">Expansion Name</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Alternate Names -->
+                        <div class="col-md-6" th:if="${alternateNames != null and !alternateNames.isEmpty()}">
+                            <h4>Alternate Names</h4>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item" th:each="altName : ${alternateNames}" th:text="${altName.name}">Alternate Name</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Artists -->
+                        <div class="col-md-12" th:if="${artists != null and !artists.isEmpty()}">
+                            <h4>Artists</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item" th:each="artist : ${artists}" th:text="${artist.name}">Artist Name</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="mt-5">
+    <div th:replace="fragments/footer :: footer"></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

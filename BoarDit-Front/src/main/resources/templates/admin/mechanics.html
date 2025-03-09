@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Mechanics</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Boardit</a>
+    <a class="navbar-brand" href="/admin">Admin Panel</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2>Manage Mechanics</h2>
+
+  <div class="mt-4">
+    <div class="alert alert-danger" th:if="${error != null}" th:text="${error}"></div>
+    <div class="alert alert-success" th:if="${success != null}" th:text="${success}"></div>
+  </div>
+
+
+  <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addMechanicModal">Add New Mechanic</button>
+
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="mechanic : ${mechanics}">
+      <td th:text="${mechanic.id}"></td>
+      <td th:text="${mechanic.name}"></td>
+      <td>
+        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editMechanicModal"
+                th:attr="data-id=${mechanic.id},data-name=${mechanic.name}">Edit</button>
+        <a th:href="@{'/admin/mechanics/delete/' + ${mechanic.id}}" class="btn btn-danger btn-sm">Delete</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal fade" id="addMechanicModal" tabindex="-1" aria-labelledby="addMechanicModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form th:action="@{/admin/mechanics/add}" method="post">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addMechanicModalLabel">Add New Mechanic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="addMechanicName" class="form-label">Mechanic Name</label>
+            <input type="text" class="form-control" id="addMechanicName" name="name" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="editMechanicModal" tabindex="-1" aria-labelledby="editMechanicModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form th:action="@{/admin/mechanics/edit/}" method="post" th:id="editMechanicForm">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editMechanicModalLabel">Edit Mechanic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" id="editMechanicId" name="id">
+          <div class="mb-3">
+            <label for="editMechanicName" class="form-label">Mechanic Name</label>
+            <input type="text" class="form-control" id="editMechanicName" name="name" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+  const editMechanicModal = document.getElementById('editMechanicModal');
+  editMechanicModal.addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;
+    const mechanicId = button.getAttribute('data-id');
+    const mechanicName = button.getAttribute('data-name');
+
+    document.getElementById('editMechanicId').value = mechanicId;
+    document.getElementById('editMechanicName').value = mechanicName;
+
+    const form = document.getElementById('editMechanicForm');
+    form.action = '/admin/mechanics/edit/' + mechanicId;
+  });
+</script>
+</body>
+</html>

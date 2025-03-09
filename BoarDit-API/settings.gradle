@@ -1,0 +1,6 @@
+rootProject.name = 'BoarDit'
+
+include ':boardit-updater'
+include ':boardit-boardgames-client'
+include ':boardit-data'
+include ':boardit-web-api'

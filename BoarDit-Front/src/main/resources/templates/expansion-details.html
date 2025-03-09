@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${expansion.name} + ' - Expansion Details'">Expansion Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"/>
+</head>
+<body>
+<header>
+    <div th:replace="fragments/nav-bar :: navbar"></div>
+</header>
+
+<main class="container my-5">
+    <div class="card">
+        <div class="card-header text-center bg-success text-white">
+            <h1 th:text="${expansion.name}">Expansion Name</h1>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img th:src="${expansion.imageLink}" alt="Expansion Image" class="img-fluid mb-3 rounded shadow">
+                </div>
+                <div class="col-md-8">
+                    <p><strong>Year Published:</strong> <span th:text="${expansion.yearPublished}">Year</span></p>
+                    <p><strong>Players:</strong> <span th:text="${expansion.minPlayers} + ' - ' + ${expansion.maxPlayers}">Players</span></p>
+                    <p><strong>Playing Time:</strong> <span th:text="${expansion.playingTime}">Time</span> mins</p>
+                    <p><strong>Description:</strong></p>
+                    <p th:text="${expansion.description}" class="text-muted">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/footer :: footer}"></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

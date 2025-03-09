@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:text="${pageTitle}">Admin Panel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
+      padding: 50px 20px;
+      border-radius: 10px;
+    }
+    .section-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .section-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Boardit</a>
+    <a class="navbar-brand" href="/admin">Admin Panel</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="hero text-center mb-4">
+    <h1>Welcome to Admin Panel</h1>
+    <p class="lead">Manage your application data efficiently and effortlessly.</p>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card section-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Manage Users</h5>
+          <p class="card-text">Create, edit, and delete user accounts.</p>
+          <a href="/admin/users" class="btn btn-primary">Go to Users</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card section-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Update Board Game</h5>
+          <p class="card-text">Enter a BoardGameGeek ID to add/update the game.</p>
+          <a href="/admin/updater" class="btn btn-primary">Go to Updater</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card section-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Manage BoardGames</h5>
+          <p class="card-text">View and manage boardGames.</p>
+          <a href="/admin/boardgames" class="btn btn-primary">Go to Board Games</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <div class="card section-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Manage Mechanics</h5>
+          <p class="card-text">View and manage mechanics.</p>
+          <a href="/admin/mechanics" class="btn btn-primary">Go to Mechanics</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card section-card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Manage Categories</h5>
+          <p class="card-text">View and manage categories.</p>
+          <a href="/admin/categories" class="btn btn-primary">Go to Categories</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

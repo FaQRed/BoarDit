@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Board Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .remove-btn {
+            margin-left: 10px;
+            color: #dc3545;
+            cursor: pointer;
+        }
+
+        .remove-btn.hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Boardit</a>
+        <a class="navbar-brand" href="/admin">Admin Panel</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2>Add New Board Game</h2>
+    <form th:action="@{/admin/boardgames/add}" method="post">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Game Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter game name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="4" placeholder="Enter game description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="yearPublished" class="form-label">Year Published</label>
+                    <input type="number" class="form-control" id="yearPublished" name="yearPublished" min="1900" max="2100" placeholder="Enter year published">
+                </div>
+                <div class="mb-3">
+                    <label for="minPlayers" class="form-label">Min Players</label>
+                    <input type="number" class="form-control" id="minPlayers" name="minPlayers" min="1" placeholder="Enter minimum players">
+                </div>
+                <div class="mb-3">
+                    <label for="maxPlayers" class="form-label">Max Players</label>
+                    <input type="number" class="form-control" id="maxPlayers" name="maxPlayers" min="1" placeholder="Enter maximum players">
+                </div>
+                <div class="mb-3">
+                    <label for="playingTime" class="form-label">Playing Time (in minutes)</label>
+                    <input type="number" class="form-control" id="playingTime" name="playingTime" min="1" placeholder="Enter playing time">
+                </div>
+                <div class="mb-3">
+                    <label for="imageLink" class="form-label">Image Link</label>
+                    <input type="url" class="form-control" id="imageLink" name="imageLink" placeholder="Enter image URL">
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+
+                <div class="mb-3">
+                    <label class="form-label">Categories</label>
+                    <div id="categories-container">
+                        <div class="d-flex align-items-center mb-2">
+                            <select class="form-select" name="categories">
+                                <option th:each="category : ${availableCategories}" th:value="${category.id}" th:text="${category.name}"></option>
+                            </select>
+                            <span class="remove-btn hidden" onclick="removeField(this)">×</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addCategoryField()">Add Another Category</button>
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label">Mechanics</label>
+                    <div id="mechanics-container">
+                        <div class="d-flex align-items-center mb-2">
+                            <select class="form-select" name="mechanics">
+                                <option th:each="mechanic : ${availableMechanics}" th:value="${mechanic.id}" th:text="${mechanic.name}"></option>
+                            </select>
+                            <span class="remove-btn hidden" onclick="removeField(this)">×</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addMechanicField()">Add Another Mechanic</button>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="artists" class="form-label">Artists</label>
+                    <div id="artist-container">
+                        <div class="d-flex align-items-center mb-2">
+                            <input type="text" class="form-control" name="artists"  id="artists" placeholder="Enter artist name">
+                            <span class="remove-btn hidden" onclick="removeField(this)">×</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addArtistField()">Add Another Artist</button>
+                </div>
+
+                <!-- Alternate Names -->
+                <div class="mb-3">
+                    <label for="alternateNames" class="form-label">Alternate Names</label>
+                    <div id="altname-container">
+                        <div class="d-flex align-items-center mb-2">
+                            <input type="text" class="form-control" name="alternateNames" id="alternateNames" placeholder="Enter alternate name">
+                            <span class="remove-btn hidden" onclick="removeField(this)">×</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="addAltNameField()">Add Another Alternate Name</button>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Game</button>
+    </form>
+</div>
+
+<script>
+    function toggleRemoveButtons(containerId) {
+        const container = document.getElementById(containerId);
+        const buttons = container.querySelectorAll('.remove-btn');
+        buttons.forEach(button => {
+            button.classList.toggle('hidden', container.children.length <= 1);
+        });
+    }
+
+    function addCategoryField() {
+        const container = document.getElementById("categories-container");
+        const field = container.firstElementChild.cloneNode(true);
+        container.appendChild(field);
+        toggleRemoveButtons("categories-container");
+    }
+
+    function addMechanicField() {
+        const container = document.getElementById("mechanics-container");
+        const field = container.firstElementChild.cloneNode(true);
+        container.appendChild(field);
+        toggleRemoveButtons("mechanics-container");
+    }
+
+    function addArtistField() {
+        const container = document.getElementById("artist-container");
+        const field = container.firstElementChild.cloneNode(true);
+        container.appendChild(field);
+        toggleRemoveButtons("artist-container");
+    }
+
+    function addAltNameField() {
+        const container = document.getElementById("altname-container");
+        const field = container.firstElementChild.cloneNode(true);
+        container.appendChild(field);
+        toggleRemoveButtons("altname-container");
+    }
+
+    function removeField(element) {
+        const container = element.parentElement.parentElement;
+        element.parentElement.remove();
+        toggleRemoveButtons(container.id);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        toggleRemoveButtons("categories-container");
+        toggleRemoveButtons("mechanics-container");
+        toggleRemoveButtons("artist-container");
+        toggleRemoveButtons("altname-container");
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

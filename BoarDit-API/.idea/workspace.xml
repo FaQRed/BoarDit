@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4073d692-c63b-41bf-9268-e37302a42c95" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/boardit-boardgames-client">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/boardit-data">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/boardit-updater">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/boardit-web-api">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/boardit-boardgames-client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/boardit-updater">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/boardit-data">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/boardit-web-api">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="boardit-web-api" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="boardit-web-api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="boardit-web-api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rD3iddcKIcDiDXWuGKifkaJr97" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.AlternateNameControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.getAllReturnsAlternateNames.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldCreateAlternateName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldDeleteAlternateName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldGetAllAlternateNamesByGameId.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldGetAlternateNameById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldReturnNotFoundForNonExistentAlternateName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldReturnNotFoundWhenDeletingNonExistentAlternateName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameControllerIntegrationTest.shouldUpdateAlternateName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameDTOTest.constructor_shouldInitializeFields.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameServiceTest.shouldThrowExceptionIfAlternateNameExistsOnUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameServiceTest.shouldThrowExceptionIfAlternateNameNotFoundOnDelete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameServiceTest.shouldUpdateAlternateName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.AlternateNameTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldCreateArtist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldDeleteArtist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldGetAllArtists.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldGetArtistById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldGetArtistsByNames.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldReturnNotFoundForNonExistentArtist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldReturnNotFoundWhenDeletingNonExistentArtist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistControllerIntegrationTest.shouldUpdateArtist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistServiceTest.shouldCreateArtistForBoardGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ArtistTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoarDitDataCatalogTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getBoardGameByIdFromApi_shouldThrowBoardGameNotFoundException.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getBoardGameByIdFromApi_shouldThrowExceptionWhenItemsEmpty.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getBoardGameByIdFromApi_shouldThrowExceptionWhenItemsNull.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getExpansionByIdFromApi_shouldHandleBatchProcessing.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getExpansionByIdFromApi_shouldHandleEmptyResponse.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getExpansionByIdFromApi_shouldHandleInterruptedException.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getExpansionByIdFromApi_shouldLogErrorOnJAXBException.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getExpansionByIdFromApi_shouldReturnEmptyForEmptyInputList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameClientImplTest.getExpansionByIdFromApi_shouldReturnExpansionDtos.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameControllerIntegrationTest.shouldAddCategoryToBoardGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameControllerIntegrationTest.shouldAddMechanicToBoardGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameControllerIntegrationTest.shouldCreateBoardGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameDtoTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.BoardGameDtoTest.gettersAndSetters_shouldWorkCorrectly.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.shouldCreateBoardGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.shouldCreateBoardGameWithAlternateNames.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.shouldCreateBoardGameWithArtists.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.shouldThrowExceptionWhenCreatingBoardGameWithExistingName.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.shouldUpdateBoardGame.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.validateBoardGameDTO_shouldPassForValidInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameServiceTest.validateBoardGameDTO_shouldThrowExceptionForInvalidInput.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGameUpdateSummaryDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGamesClientUriBuilderProviderTest.api_shouldReturnCorrectValue.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGamesClientUriBuilderProviderTest.builder_shouldBuildCorrectUri.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGamesClientUriBuilderProviderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoardGamesUpdaterTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BoarditBoardgamesClientApplicationTests.contextLoads.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Build boardit-boardgames-client.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build boardit-data.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build boardit-updater.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build boardit-web-api.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryControllerIntegrationTest.shouldUpdateCategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryServiceTest.shouldCreateCategory.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryServiceTest.shouldGetAllCategories.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExpansionControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExpansionDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExpansionMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExpansionServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ExpansionTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FieldMatchValidatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FieldMatchValidatorTest.isValid_shouldReturnFalse_whenFieldsDoNotMatch.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FieldMatchValidatorTest.isValid_shouldReturnTrue_whenFieldsMatch.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FieldMatchValidatorTest.shouldPassWhenFieldsMatch.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GlobalExceptionHandlerTest (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.GlobalExceptionHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GlobalExceptionHandlerTest.handleBoardGameNotFoundException_shouldReturnNotFoundStatus.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GlobalExceptionHandlerTest.handleGameAlreadyExistsException_shouldReturnConflictStatus.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.JwtCoreTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicDTOTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicServiceTest.shouldCreateMechanic.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MechanicTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RoleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityControllerIntegrationTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityControllerIntegrationTest.shouldNotSignUpWithDuplicateLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SecurityUserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SigninRequestTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenFilterTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TokenFilterTest.shouldHandleExpiredToken.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdaterControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdaterControllerTest.shouldReturnErrorMessageWhenGameNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserControllerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserControllerIntegrationTest.shouldFilterUsers.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserControllerIntegrationTest.shouldGetAllUsers.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserControllerIntegrationTest.shouldGetUserById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserControllerIntegrationTest.shouldSaveUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserControllerIntegrationTest.shouldUpdateUser.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserDetailsServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserRepositoryCustomImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserServiceTest.shouldThrowExceptionWhenUpdatingUserWithDuplicateLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.all-tests.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.boardit-boardgames-client [:pl.sankouski.boarditboardgamesclient.BoardGameDtoTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-boardgames-client [:pl.sankouski.boarditboardgamesclient.Main.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.boardit-boardgames-client [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-boardgames-client [jacocoTestCoverageVerification].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-boardgames-client [jacocoTestReport].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-boardgames-client [testClasses].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-boardgames-client [test].executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.boardit-data [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-data [jacocoTestCoverageVerification].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-data [jacocoTestReport].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-data [test].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-updater [:boardit-boardgames-client:pl.sankouski.boarditboardgamesclient.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-updater [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-updater [jacocoTestCoverageVerification].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-updater [jacocoTestReport].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-updater [test].executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.boardit-web-api [check].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-web-api [jacocoTestCoverageVerification].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-web-api [jacocoTestReport].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.boardit-web-api [test].executor&quot;: &quot;Coverage&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BoarditBoardgamesClientApplication (2).executor&quot;: &quot;Coverage&quot;,
+    &quot;Spring Boot.BoarditBoardgamesClientApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.BoarditDataApplication (2).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.BoarditDataApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.BoarditUpdaterApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.BoarditWebApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kiryl/Desktop/BoarDit/boardit-web-api/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.sankouski.boarditwebapi.registration" />
+      <recent name="pl.sankouski.boarditwebapi.security" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/boardit-web-api/src/test/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/boardit-web-api/src/test/resources/altNameControllerTest" />
+      <recent name="$PROJECT_DIR$/boardit-web-api/src/test/resources" />
+      <recent name="$PROJECT_DIR$/boardit-web-api/src/test/resources/sql" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BoarditWebApiApplication">
+    <configuration name="BoardGameServiceTest.validateBoardGameDTO_shouldPassForValidInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/boardit-web-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;pl.sankouski.boarditwebapi.service.BoardGameServiceTest.validateBoardGameDTO_shouldPassForValidInput&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardGameServiceTest.validateBoardGameDTO_shouldThrowExceptionForInvalidInput" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/boardit-web-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;pl.sankouski.boarditwebapi.service.BoardGameServiceTest.validateBoardGameDTO_shouldThrowExceptionForInvalidInput&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MechanicControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/boardit-web-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;pl.sankouski.boarditwebapi.controller.MechanicControllerTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceTest.shouldThrowExceptionWhenUpdatingUserWithDuplicateLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/boardit-web-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;pl.sankouski.boarditwebapi.service.UserServiceTest.shouldThrowExceptionWhenUpdatingUserWithDuplicateLogin&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="all-tests" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/boardit-web-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="boardit-web-api [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/boardit-web-api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoarditBoardgamesClientApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-updater.boardit-boardgames-client.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditboardgamesclient.BoarditBoardgamesClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditBoardgamesClientApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-web-api.boardit-boardgames-client.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditboardgamesclient.BoarditBoardgamesClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditBoardgamesClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-boardgames-client.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditboardgamesclient.BoarditBoardgamesClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditDataApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-updater.boardit-data.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditdata.BoarditDataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditDataApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-web-api.boardit-data.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditdata.BoarditDataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-data.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditdata.BoarditDataApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditUpdaterApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-web-api.boardit-updater.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditupdater.BoarditUpdaterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditUpdaterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-updater.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditupdater.BoarditUpdaterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoarditWebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="boardit-web-api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.sankouski.boarditwebapi.BoarditWebApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.all-tests" />
+      <item itemvalue="Gradle.BoardGameServiceTest.validateBoardGameDTO_shouldPassForValidInput" />
+      <item itemvalue="Gradle.BoardGameServiceTest.validateBoardGameDTO_shouldThrowExceptionForInvalidInput" />
+      <item itemvalue="Gradle.MechanicControllerTest" />
+      <item itemvalue="Gradle.UserServiceTest.shouldThrowExceptionWhenUpdatingUserWithDuplicateLogin" />
+      <item itemvalue="Gradle.boardit-web-api [test]" />
+      <item itemvalue="Spring Boot.BoarditBoardgamesClientApplication" />
+      <item itemvalue="Spring Boot.BoarditBoardgamesClientApplication (1)" />
+      <item itemvalue="Spring Boot.BoarditBoardgamesClientApplication (2)" />
+      <item itemvalue="Spring Boot.BoarditDataApplication" />
+      <item itemvalue="Spring Boot.BoarditDataApplication (1)" />
+      <item itemvalue="Spring Boot.BoarditDataApplication (2)" />
+      <item itemvalue="Spring Boot.BoarditUpdaterApplication" />
+      <item itemvalue="Spring Boot.BoarditUpdaterApplication (1)" />
+      <item itemvalue="Spring Boot.BoarditWebApiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.boardit-web-api [test]" />
+        <item itemvalue="Gradle.BoardGameServiceTest.validateBoardGameDTO_shouldPassForValidInput" />
+        <item itemvalue="Gradle.BoardGameServiceTest.validateBoardGameDTO_shouldThrowExceptionForInvalidInput" />
+        <item itemvalue="Gradle.MechanicControllerTest" />
+        <item itemvalue="Gradle.UserServiceTest.shouldThrowExceptionWhenUpdatingUserWithDuplicateLogin" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4073d692-c63b-41bf-9268-e37302a42c95" name="Changes" comment="" />
+      <created>1736079948238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736079948238</updated>
+      <workItem from="1736079949177" duration="626000" />
+      <workItem from="1736080578883" duration="65464000" />
+      <workItem from="1736203092850" duration="8774000" />
+      <workItem from="1736240808205" duration="84000" />
+      <workItem from="1736332795844" duration="2049000" />
+      <workItem from="1736348897921" duration="3294000" />
+      <workItem from="1736621253378" duration="30108000" />
+      <workItem from="1736775749011" duration="836000" />
+      <workItem from="1736779297334" duration="1536000" />
+      <workItem from="1737058119828" duration="68000" />
+      <workItem from="1737123959219" duration="24664000" />
+      <workItem from="1737230310662" duration="8926000" />
+      <workItem from="1737242482048" duration="5917000" />
+      <workItem from="1737290943418" duration="17963000" />
+      <workItem from="1737316265862" duration="15000" />
+      <workItem from="1737319168009" duration="15014000" />
+      <workItem from="1737366029040" duration="202000" />
+      <workItem from="1737366246042" duration="20227000" />
+      <workItem from="1737490709306" duration="1817000" />
+      <workItem from="1737555209912" duration="5647000" />
+      <workItem from="1737927825720" duration="3507000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/controller/CategoryController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/controller/CategoryController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/controller/CategoryController.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/service/boardgame/CategoryService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/service/boardgame/CategoryService.java</url>
+          <line>61</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/service/boardgame/CategoryService.java</url>
+          <line>61</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/service/boardgame/CategoryService.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/service/boardgame/CategoryService.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/boardit-web-api/src/main/java/pl/sankouski/boarditwebapi/controller/AlternateNameController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="String response = restClient.getForObject(uri, String.class);" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BoarDit$BoarditBoardgamesClientApplication__2_.ic" NAME="BoarditBoardgamesClientApplication (2) Coverage Results" MODIFIED="1737243090224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$boardit_updater__test_.ic" NAME="boardit-updater [test] Coverage Results" MODIFIED="1737323323208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$BoardGameDtoTest.ic" NAME="BoardGameDtoTest Coverage Results" MODIFIED="1737243956387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$all_tests.ic" NAME="all-tests Coverage Results" MODIFIED="1737246635601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$BoarditBoardgamesClientApplicationTests_contextLoads.ic" NAME="BoarditBoardgamesClientApplicationTests.contextLoads Coverage Results" MODIFIED="1737244784189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$boardit_web_api__test_.ic" NAME="boardit-web-api [test] Coverage Results" MODIFIED="1737559938547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$GlobalExceptionHandlerTest__1_.ic" NAME="GlobalExceptionHandlerTest (1) Coverage Results" MODIFIED="1737243809922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$BoardGameClientImplTest.ic" NAME="BoardGameClientImplTest Coverage Results" MODIFIED="1737246456264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BoarDit$boardit_boardgames_client__test_.ic" NAME="boardit-boardgames-client [test] Coverage Results" MODIFIED="1737248588148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+</project>

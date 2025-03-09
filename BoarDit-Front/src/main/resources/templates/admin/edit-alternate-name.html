@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Alternate Name</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+  <h2>Edit Alternate Name</h2>
+  <form th:action="@{/admin/boardgames/{boardGameId}/edit-alternate-name/{altNameId}(boardGameId=${boardGameId}, altNameId=${altName.id})}" method="post">
+    <div class="mb-3">
+      <label for="altName" class="form-label">Alternate Name</label>
+      <input type="text" class="form-control" id="altName" name="name" th:value="${altName.name}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a th:href="@{/admin/boardgames/{id}(id=${boardGameId})}" class="btn btn-secondary">Cancel</a>
+  </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

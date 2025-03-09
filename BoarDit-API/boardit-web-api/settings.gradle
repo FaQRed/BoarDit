@@ -1,0 +1,8 @@
+    rootProject.name = 'boardit-web-api'
+
+include 'boardit-data'
+project(':boardit-data').projectDir = new File(settingsDir, '../boardit-data')
+include 'boardit-boardgames-client'
+project(':boardit-boardgames-client').projectDir = new File(settingsDir, '../boardit-boardgames-client')
+include 'boardit-updater'
+project(':boardit-updater').projectDir = new File(settingsDir, '../boardit-updater')
